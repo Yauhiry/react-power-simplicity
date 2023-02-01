@@ -1,0 +1,23 @@
+.header {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 32px 0;
+    align-items: center;
+  }
+  &__logo {
+    justify-self: start;
+  }
+  &__logo-img {
+    color: #f2f4f7;
+  }
+  &__button {
+    height: 48px;
+    width: 159px;
+    border: none;
+    border-radius: 50px;
+    justify-self: end;
+    background: linear-gradient(135deg, #e1e1e1, #ffffff);
+    cursor: pointer;
+  }
+}

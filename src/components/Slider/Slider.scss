@@ -1,0 +1,35 @@
+.slider {
+  display: grid;
+  grid-template-rows: 898px;
+  position: relative;
+  &__list {
+    width: 100%;
+    position: absolute;
+    bottom: 341px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+  }
+  &__dots {
+    width: 208px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 32px;
+    position: absolute;
+    bottom: 245px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+  }
+  &__dot {
+    width: 16px;
+    height: 16px;
+    border: 4px solid #c4c4c429;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &--active {
+      border-color: #ffffff;
+    }
+  }
+}

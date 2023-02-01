@@ -1,0 +1,10 @@
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-self: center;
+  grid-column-gap: 64px;
+  &__link {
+    font-size: 14px;
+    color: #a0a3a7;
+  }
+}
