@@ -1,5 +1,5 @@
 import React from 'react';
-import './SliderItem.scss';
+import './slider-item.scss';
 
 export const SliderItem = () => {
   return (
@@ -10,7 +10,9 @@ export const SliderItem = () => {
           Instead of spending time searching for the right app, our AI will
           bring the right app to you.
         </p>
-        <button className="slider__button">Learn</button>
+        <button className="slider__button">
+          <span className="slider__button-text"> Learn</span>
+        </button>
       </div>
     </li>
   );

@@ -1,9 +1,8 @@
-import './ui/variables.scss';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './ui/cdn.scss';
 import './ui/reset.scss';
 import './ui/main-template.scss';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { App } from './App';
 
 const root = ReactDOM.createRoot(

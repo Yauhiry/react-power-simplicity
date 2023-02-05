@@ -1,16 +1,23 @@
-html {
-  font-family: 'Helvetica', sans-serif;
-}
 body {
+  font-family: 'Helvetica';
   background: linear-gradient(135deg, #fc3f5f, #7d61ff) fixed;
 }
 .app {
-  max-width: 1440px;
-  background: linear-gradient(#2b2215cc, #22282e);
+  max-width: 1410px;
   margin: 50px auto;
+  background: linear-gradient(#2b2215cc, #22282e);
   border-radius: 32px;
+  @media (max-width: 1440px) {
+    margin: 50px 15px;
+  }
+  @media (max-width: 768px) {
+    margin: 15px;
+  }
 }
 .container {
-  width: 94%;
+  width: 95%;
   margin: 0 auto;
+  @media (max-width: 375px) {
+    width: 85%;
+  }
 }

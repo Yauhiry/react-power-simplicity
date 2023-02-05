@@ -1,32 +1,46 @@
 .slider {
+  position: relative;
   display: grid;
   grid-template-rows: 898px;
-  position: relative;
+  @media (max-width: 375px) {
+    grid-template-rows: 670px;
+  }
   &__list {
-    width: 100%;
     position: absolute;
     bottom: 341px;
     left: 50%;
-    transform: translate(-50%);
     z-index: 1;
+    width: 100%;
+    transform: translate(-50%);
+    @media (max-width: 375px) {
+      bottom: 260px;
+    }
   }
   &__dots {
-    width: 208px;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-column-gap: 32px;
     position: absolute;
     bottom: 245px;
     left: 50%;
-    transform: translate(-50%);
     z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 32px;
+    width: 208px;
+    transform: translate(-50%);
+    @media (max-width: 375px) {
+      bottom: 200px;
+      grid-column-gap: 24px;
+    }
   }
   &__dot {
     width: 16px;
     height: 16px;
-    border: 4px solid #c4c4c429;
+    border: 3px solid #c4c4c429;
     border-radius: 8px;
     cursor: pointer;
+    @media (max-width: 375px) {
+      width: 14px;
+      height: 14px;
+    }
 
     &--active {
       border-color: #ffffff;

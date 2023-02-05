@@ -1,6 +1,6 @@
 import { Navigation } from '../Navigation/Navigation';
 import { ReactComponent as LogoIcon } from '../../assets/icons/logo.svg';
-import './Header.scss';
+import './header.scss';
 
 export const Header = () => {
   return (
